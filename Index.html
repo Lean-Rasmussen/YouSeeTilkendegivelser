@@ -1,19 +1,19 @@
 <!DOCTYPE html>
+<html ng-app='myApp'>
 <meta charset="UTF-8">
 
 <head>
 <!--Style sheets -->
-	<link rel="stylesheet" type="text/css" href="normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 <!--scripts Sheets-->
-	<script type="text/javascript" ></script>
-	<script src = 'https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js'></script>
-
-</head>
+	<script src = 'https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js'></script>
+	<script type="text/javascript" src= App.js charset="utf-8"></script>
+	
+	</head>
 <header>
 </header>
-
+<body ng-controller= 'MainController'>
 <h1> Yousee Tilkendegiverlser</h1>
-<body>
 	<p>This is getting updated soon</p>
 
 <div>
@@ -59,7 +59,7 @@
   			<option value="">Mellem</option>
   			<option value="">Stor</option>
 		</select>
-		<label>Onsker du indvendig installation (kr'ver tomr'r) <a>Betingelser for indvendig installation</a></label>
+		<label>Onsker du indvendig installation (kr'ver tomr'r)</label> <a href= ''>Betingelser for indvendig installation</a> 
 		<input type="checkbox" name="invendig installation">
 </div>		
 
@@ -81,3 +81,5 @@
 
 <footer>
 </footer>
+
+</html>

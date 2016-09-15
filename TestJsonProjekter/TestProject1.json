@@ -1,0 +1,2 @@
+'use strickt';
+var AktiveProjekter = ['Ryttergaarden', 'Steenstrup','Urholm']

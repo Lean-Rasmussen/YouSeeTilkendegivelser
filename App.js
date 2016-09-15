@@ -1,5 +1,11 @@
+"use strict";
+var TilkendegiveseAppModule = angular.module('myApp', []);
 
+TilkendegiveseAppModule.controller('MainController', ('%scope', function($scope){
 
+	console.log('is this up and firing??');
+
+}));
 //Project is divided into 4 parts, selction project, getting user input and storing user input, getting it as output
 
 // selecting
@@ -20,12 +26,10 @@
 	// check if there is alrady and adress with the number
 	//storing the information.
 
-
-
 //Getting the information from the form out in an excel like manner.
 
 
-//maybe Json file maker for manuel inout from sales.
+//maybe Json file maker for manuel input from sales.
 		//take name of projects
 		//take input for road names
 		//edit in road names
