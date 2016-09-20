@@ -1,19 +1,18 @@
 "use strict";
 var TilkendegiveseAppModule = angular.module('myApp', []);
 
-TilkendegiveseAppModule.controller('ProjektValgController' , ( function(){
+TilkendegiveseAppModule.controller('ProjektValgController' ,( function(){
 	//active projects should be taken from a list of Json files.
 	//roads in a projects should be found from the Json file and added to the options 
 	this.fiber = [
 	{
 	ProjektNavn : 'Ryttergaarden',
-	Ryttergaarden :{
 	Vejnavne : ['Maanevej','Orionvej', 'Saturnvej', 'Jupitervaenget'],
 	KontaktPerson : 'John Jensen',
 	YouSeeProjektLeder : "Thomas Thomsen"
-	}},
+	},
 	{
-	ProjektNavn : 'Steenstrup',
+	ProjektNavn : 'Steenstrup',				
 	Vejnavne : ['Holmevej','Toftevaenget', 'Sommervej','Vinterstien'],
 	KontaktPerson : 'Olga Johansen',
 	YouSeeProjektLeder : "Thomas Thomsen"
@@ -26,8 +25,10 @@ TilkendegiveseAppModule.controller('ProjektValgController' , ( function(){
 	}
 
 ];
+this.valgtProjekt ='stand in name';
+console.log(this.fiber);
 
-this.projektNavne = [];
+this.projektNavne = [''];
 for (var i = 0; i < this.fiber.length; i++ ){
 	this.projektNavne.push(this.fiber[i].ProjektNavn);
 
@@ -49,9 +50,8 @@ this.tilvalg = ['HD pakke', 'Plus', 'TV i flere rum','Cmore'];
 
 //Getting user input
 
-	//Name and other personal information should be requred before you can press the button
-	//require press on link for conditions
-	//requre checkbox is checked.
+	//Name and other personal information should be requred before you can press the button (done via HtML requred)
+	//require press on link for conditions (done via HtML requred)
 	//saving the user input
 
 // Storing user input.
@@ -68,29 +68,8 @@ this.tilvalg = ['HD pakke', 'Plus', 'TV i flere rum','Cmore'];
 		//output a json file which can be plugged into the list for the program
 
 
-
 // Data for use during test
-var fiber = [
-	{
-	ProjektNavn : 'Ryttergaarden',
-	Vejnavne : ['Maanevej','Orionvej', 'Saturnvej', 'Jupitervaenget'],
-	KontaktPerson : 'John Jensen',
-	YouSeeProjektLeder : "Thomas Thomsen"
-	},
-	{
-	ProjektNavn : 'Steenstrup',
-	Vejnavne : ['Holmevej','Toftevaenget', 'Sommervej','Vinterstien'],
-	KontaktPerson : 'Olga Johansen',
-	YouSeeProjektLeder : "Thomas Thomsen"
-	},
-	{
-	ProjektNavn : 'Urholm',
-	Vejnavne : ['Jensensvej', 'Dirchs alle', 'gulle vaenget', 'Histernevej'],
-	KontaktPerson : 'John Johnsen',
-	YouSeeProjektLeder : "Per Nielsen"
-	}
 
-];
 //Fremskudt Dslam
 var FremskudtDslam = ['Bornholm','Fyn','Nordjylland'];
 

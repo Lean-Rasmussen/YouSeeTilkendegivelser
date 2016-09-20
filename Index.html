@@ -18,42 +18,38 @@
 
 <div >
 	<h2> Vaelg hvilket projekt du gerne vil tilmelde dig til </h2>
-
-		<label>Aktive projekter</label>
-		<select name="ValgAktivtProjekt" >
-  			<option value="" ng-repeat = 'Navn in ProjektValg.projektNavne'>{{Navn}}</option>
-		</select>
-
-
-		<label>Vaelg vej</label>
-		<select name="vejnavn">
-			<option value="">Vaelg vej</option>
- 			<option value="">vejnavn 1</option>
-  			<option value="">vejnavn 2 </option>
-  			<option value="">vejnavn 3</option>
-		</select>
+		<form>
+			<label>Aktive projekter</label>
+			<select name="ValgAktivtProjekt"  required="">
+  				<option value="" ng-repeat = 'Navn in ProjektValg.projektNavne'>{{Navn}}</option>
+			</select>
+		
+		<label>Vaelg vej{{ProjektValg.fiber.Ryttergaarden.Vejnavne}}</label>
+		<select name="vejnavn" required="">
+			<option value="" ng-repeat = 'vejnavn in ProjektValg.fiber.Ryttergaarden.Vejnavne'>{{vejnavn}}</option>
+ 		</select>
 
 
 		<label>Husnummer</label>
-		<input type="" name="Nummer">
+		<input type="" name="Nummer" required="">
 </div>
 <div>
 
 		<h2>Personlige oplysninger</h2>
 		<label>Fornavn</label>
-		<input type="text" name="fornavn">
+		<input type="text" name="fornavn" required="">
 		<label>Efternavn</label>
-		<input type="text" name="efternavn">
+		<input type="text" name="efternavn" required="">
 		<label>Telefon nummer</label>
-		<input type="tel" name="kontaktNummer">
+		<input type="tel" name="kontaktNummer" required="">
 		<label>Email</label>
-		<input type="email" name="E-mail">
+		<input type="email" name="E-mail" required="">
 </div>		
 <div>
 		
 		<h2> Valg af produkter</h2>
 		<label>Vaelg TV pakke</label>
-		<select name="TV pakke">
+		<select name="TV pakke" required="">
 		<option value="">Lille</option>
  			<option value="">Basis</option>
   			<option value="">Mellem</option>
@@ -70,11 +66,12 @@
 </div>		
 
 
-		<input type="checkbox" name="Betingelser">
-		<a href="linkTilBetingelser">Betingelser for Tilmeldelse<a>
+		<input type="checkbox" name="Betingelser" required="">
+		<a href="linkTilBetingelser">Betingelser for Tilmeldelse</a>
 
 
 		<button> Tilmeld bestilling</button>
+		</form>
 <p> Kontakt information til F;llessalg eller s[ kontokt venligst os p[ telefon nummer 88888888 fallsMail@tdc.dk<p>
 
 <p>Kontakt information til landdistrekterne kontakt os venligst paa telefon nummer 77777777 fallsMail@tdc.dk<p>
