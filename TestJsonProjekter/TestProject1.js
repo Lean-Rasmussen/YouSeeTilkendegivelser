@@ -1,8 +1,31 @@
 'use strickt';
-var AktiveProjekter = ['Ryttergaarden', 'Steenstrup','Urholm'];
+// Fiber Projekter
+var fiber = [
+	{
+	ProjektNavn : 'Ryttergaarden',
+	Vejnavne : ['Maanevej','Orionvej', 'Saturnvej', 'Jupitervaenget'],
+	KontaktPerson : 'John Jensen',
+	YouSeeProjektLeder : "Thomas Thomsen"
+	},
+	{
+	ProjektNavn : 'Steenstrup',
+	Vejnavne : ['Holmevej','Toftevaenget', 'Sommervej','Vinterstien'],
+	KontaktPerson : 'Olga Johansen',
+	YouSeeProjektLeder : "Thomas Thomsen"
+	},
+	{
+	ProjektNavn : 'Urholm',
+	Vejnavne : ['Jensensvej', 'Dirchs alle', 'gulle vaenget', 'Histernevej'],
+	KontaktPerson : 'John Johnsen',
+	YouSeeProjektLeder : "Per Nielsen"
+	}
 
-var VejnavneRyttergaarden = ['Maanevej','Orionvej', 'Saturnvej', 'Jupitervaenget'];
+];
 
-var VejnavneSteenstrup =['Holmevej','Toftevaenget', 'Sommervej','Vinterstien'];
+//
+Projekter.FremskudtDslam = ['Bornholm','Fyn','Nordjylland'];
 
-var VejnavneUrholm = ['Jensensvej', 'Dirchs alle', 'gulle vaenget', 'Histernevej'];
+
+//TV Pakker
+var TvPakkerFiber = ['FiberTrio','TrioExtra','ViasatPakke','TotalPakke' ];
+var TvPakkerKobber = ['LIlle', 'Basis', 'Mellem' , 'Stor'];
