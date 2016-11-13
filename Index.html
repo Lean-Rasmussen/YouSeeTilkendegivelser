@@ -1,88 +1,14 @@
 <!DOCTYPE html>
-<html ng-app='myApp'>
-<meta charset="UTF-8">
+<html lang = "en">
 
-<head>
-<!--Style sheets -->
-	<link rel="stylesheet" type="text/css" href="css/normalize.css">
-<!--scripts Sheets-->
-	<script src = 'https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js'></script>
-	<script type="text/javascript" src= App.js charset="utf-8"></script>
-	
-	</head>
-<header>
-</header>
-<body ng-controller = 'ProjektValgController as ProjektValg'>
-<h1> Yousee Tilkendegiverlser</h1>
-	<p>This is getting updated soon</p>
+   <head>
+      <meta charset = "UTF-8">
+      <title>React App</title>
+   </head>
 
-<div >
-	<h2> Vaelg hvilket projekt du gerne vil tilmelde dig til </h2>
-		<form>
-			<label>Aktive projekter</label>
-			<select name="ValgAktivtProjekt"  required="">
-  				<option value="" ng-repeat = 'Navn in ProjektValg.projektNavne'>{{Navn}}</option>
-			</select>
-		
-		<label>Vaelg vej{{ProjektValg.fiber.Ryttergaarden.Vejnavne}}</label>
-		<select name="vejnavn" required="">
-			<option value="" ng-repeat = 'vejnavn in ProjektValg.fiber.Ryttergaarden.Vejnavne'>{{vejnavn}}</option>
- 		</select>
-
-
-		<label>Husnummer</label>
-		<input type="" name="Nummer" required="">
-</div>
-<div>
-
-		<h2>Personlige oplysninger</h2>
-		<label>Fornavn</label>
-		<input type="text" name="fornavn" required="">
-		<label>Efternavn</label>
-		<input type="text" name="efternavn" required="">
-		<label>Telefon nummer</label>
-		<input type="tel" name="kontaktNummer" required="">
-		<label>Email</label>
-		<input type="email" name="E-mail" required="">
-</div>		
-<div>
-		
-		<h2> Valg af produkter</h2>
-		<label>Vaelg TV pakke</label>
-		<select name="TV pakke" required="">
-		<option value="">Lille</option>
- 			<option value="">Basis</option>
-  			<option value="">Mellem</option>
-  			<option value="">Stor</option>
-		</select>
-		<div>
-		<label> Billede af tv pakke</label>
-		</div>
-		<ul ng-repeat ='tilvalg in ProjektValg.tilvalg'>
-			<li>{{tilvalg}}</li>
-		</ul>
-		<label>Onsker du indvendig installation (kr'ver tomr'r)</label> <a href= ''>Betingelser for indvendig installation</a> 
-		<input type="checkbox" name="invendig installation">
-</div>		
-
-
-		<input type="checkbox" name="Betingelser" required="">
-		<a href="linkTilBetingelser">Betingelser for Tilmeldelse</a>
-
-
-		<button> Tilmeld bestilling</button>
-		</form>
-<p> Kontakt information til F;llessalg eller s[ kontokt venligst os p[ telefon nummer 88888888 fallsMail@tdc.dk<p>
-
-<p>Kontakt information til landdistrekterne kontakt os venligst paa telefon nummer 77777777 fallsMail@tdc.dk<p>
-
-<p> Kontakt omkring Fremskudt Central kontakt os venligst paa telefon nummer 66666666 eller email. fallsMail@tdc.dk<p>
-
-
-
-</body>
-
-<footer>
-</footer>
+   <body>
+      <div id = "app"></div>
+      <script src = "index.js"></script>
+   </body>
 
 </html>
