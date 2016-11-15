@@ -1,0 +1,26 @@
+
+body{
+	background:#002219;
+}
+
+
+.container{
+	display: flex;
+	margin :100px;
+	color:white;
+	font-family: etica;
+
+}
+
+.projektStyle{
+	color :green;
+}
+
+selector{
+	margin :10 px;
+}
+.personinfostyle{
+	background :#fff;
+	color:#000;
+
+}

@@ -1,5 +1,5 @@
 import React from 'react';
-
+const basistv = require('./img/HTF.png');
 
  class ProjektValg extends React.Component {
 	
@@ -19,7 +19,7 @@ import React from 'react';
 			})}
 			</select>
 			<label> Billede af tv pakke</label>
-			<img src = {'./img/HTF.png'}/>
+			<img src = {basistv}/>
 			<label>Onsker du indvendig installation (kr'ver tomr'r)</label> <a href= ''>Betingelser for indvendig installation</a> 
 			<input type="checkbox" name="invendig installation"/>
          </div>

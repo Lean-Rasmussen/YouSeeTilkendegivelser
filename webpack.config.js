@@ -21,9 +21,19 @@ var config = {
             query: {
                presets: ['es2015', 'react']
             }
+         },
+         {
+            loaders : ['style-loader', 'css-loader'],
+            test: /\.css$/, loader: "style-loader!css-loader" 
+
+         },
+         {
+           test: /\.(jpg|png)$/,
+           loader: 'url?limit=25000',
+           include: .img
          }
       ]
    }
-}
+};
 
 module.exports = config;

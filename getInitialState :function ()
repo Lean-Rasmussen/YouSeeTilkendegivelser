@@ -1,0 +1,6 @@
+getInitialState :function ()
+{
+	roadNames = [];
+
+
+Projekt[indexOfSelectedProject].Vejnavne

@@ -1,10 +1,10 @@
 import React from 'react';
 import Footer from "./components/Footer" 
 import Header from "./components/Header" 
-import PersonInfo from "./components/Personinfo" 
 import ProduktValg from "./components/ProduktValg" 
 import Projektvalg from "./components/Projektervalg" 
-//import Tilmeld from "./component/Tilmeld"<Tilmeld/>
+import Tilmeld from "./components/Tilmeld"
+
 
 
 class App extends React.Component {
@@ -37,12 +37,12 @@ class App extends React.Component {
 
 
       return (
+
          <div>
-         	<Header/>
+           	<Header/>
             <Projektvalg Projekt ={fiberProjekter}/>
-            <PersonInfo/>
             <ProduktValg TVPakker = {TVPakker}/>
-            
+            <Tilmeld/>
             <Footer/>
          </div>
       );

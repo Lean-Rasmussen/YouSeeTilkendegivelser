@@ -1,33 +1,38 @@
 import React from 'react';
-import AdresseValg from "./adr"
-let indexOfSelectedProject = 0
+import PersonInfo from "./Personinfo";
+let indexOfSelectedProject = 0;
+var Projektvalg = React.createClass( {
+
+    getInitialState() {
+    return {
+      roadNames: this.props.Projekt[indexOfSelectedProject].Vejnavne,
+      }
+  },
 
 
-class Projektvalg extends React.Component {
-  constructor(props){
-    super(props);
-  }  
-  getProject(){
-    indexOfSelectedProject = document.getElementById("projectValgt").selectedIndex
-    render(AdresseValg)
-  }
+    updateVejnavne(e) {
+      indexOfSelectedProject = document.getElementById("projectValgt").selectedIndex
+      this.setState({
+        roadNames:this.props.Projekt[indexOfSelectedProject].Vejnavne,
+      });
+
+  },
    render() {
       return (
          <div>
-         	<h2> Vaelg hvilket projekt du gerne vil tilmelde dig til </h2>
+         	<h3> Vaelg hvilket projekt du gerne vil tilmelde dig til </h3>
          	<label>Aktive projekter</label>
-			<select id = 'projectValgt' onChange = {this.getProject.bind(this)} required="">
-      {this.props.Projekt.map(function(vejnavn){
-          return <option key= {vejnavn.ProjektNavn} >{vejnavn.ProjektNavn}</option> 
-        })}
-  			</select>
-        <p>Tilmeldte {5}</p>
-         <br></br>   
-  			<AdresseValg Vejnavne = {this.props.Projekt[indexOfSelectedProject].Vejnavne}/>
-        <label>Husnummer</label>
-      <input required= ""/>
-		 </div>
+      		<div className ='projektStyle' >
+          <select id = 'projectValgt' onChange = {this.updateVejnavne} required="">
+          {this.props.Projekt.map(function(projekt, key){
+              return <option>{projekt.ProjektNavn}</option> 
+            })}
+      			</select>
+            </div>
+            <p>Tilmeldte {5}</p>  
+  			    <PersonInfo Vejnavne = {this.state.roadNames}/>
+		    </div>
     );
   }
-}
+})
 export default Projektvalg
