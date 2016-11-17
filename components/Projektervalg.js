@@ -19,8 +19,8 @@ var Projektvalg = React.createClass( {
   },
    render() {
       return (
-         <div>
-         	<h3> Vaelg hvilket projekt du gerne vil tilmelde dig til </h3>
+         <div className= 'projectvalgContainer'>
+         	<h3> Vælg hvilket projekt du gerne vil tilmelde dig til </h3>
          	<label>Aktive projekter</label>
       		<div className ='projektStyle' >
           <select id = 'projectValgt' onChange = {this.updateVejnavne} required="">
@@ -29,7 +29,7 @@ var Projektvalg = React.createClass( {
             })}
       			</select>
             </div>
-            <p>Tilmeldte {5}</p>  
+            <p>Tilmeldte antal af tilmeldte fra database</p> 
   			    <PersonInfo Vejnavne = {this.state.roadNames}/>
 		    </div>
     );

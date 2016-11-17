@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang = "en">
+   <head>
+      <meta charset = "UTF-8">
+      <title>Nyt projekt</title>
+   </head>
+
+   <body>
+	   <label>Projekt navn</label>
+	   <input type="text" Id= 'Projektnavn'></input>
+	   <br>
+		<label>Vejnavne (husk komma imellem hver)</label>
+		<input Id= 'vejnavne' type="text"></input>
+	<script type="text/javascript">
+	var vejnavne =''
+	var update = function (){
+		var projekt = document.getElementById('Projektnavn').value
+	 	console.log(projekt)
+		document.getElementById('projekt').innerHTML = projekt;
+
+		var vej = document.getElementById('vejnavne').value
+		vejnavne += " ' " + vej +" ' "+" , ";
+	    console.log(vejnavne)
+		console.log(vej)
+		
+		document.getElementById('veje').innerHTML = vejnavne;
+ 	}
+
+	</script>
+		<p>
+		{
+		ProjektNavn : '</p> 
+		<p Id='projekt'  value = "" ></p> 
+		</p>
+		<p>',</p>
+		<p>	Vejnavne : [</p>
+		<p Id ='veje' value = "" ></p> 
+		<p>	],</p>
+		<p>	},</p>
+		<button onclick="update()">Klik her for at opdatere</button>
+   </body>
+
+</html>

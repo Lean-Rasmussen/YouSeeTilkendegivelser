@@ -28,12 +28,8 @@ class App extends React.Component {
 	KontaktPerson : 'Olga Johansen',
 	YouSeeProjektLeder : "Thomas Thomsen"
 	},
-	{
-	ProjektNavn : 'Urholm',
-	Vejnavne : ['Jensensvej', 'Dirchs alle', 'gulle vaenget', 'Histernevej'],
-	KontaktPerson : 'John Johnsen',
-	YouSeeProjektLeder : "Per Nielsen"
-	}]
+
+	]
 
 
       return (

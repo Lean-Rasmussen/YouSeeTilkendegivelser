@@ -1,26 +1,84 @@
 
 body{
-	background:#002219;
+background:#002219;
+
 }
-
-
 .container{
 	display: flex;
-	margin :100px;
-	color:white;
+	color:black;
 	font-family: etica;
-
+	flex-direction: column;
+	
 }
 
-.projektStyle{
-	color :green;
-}
-
-selector{
-	margin :10 px;
-}
-.personinfostyle{
+.projectvalgContainer, .personinfostyle{
 	background :#fff;
 	color:#000;
+	margin-bottom: 15px;
+}
+
+.projectvalgContainer, .header{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+color:black;
+}
+
+.header, .tilmeld, .footer, .Produktvalg{
+background:#002219;
+margin-left: 0%;
+margin-right: 0%;
+color:white;
+}
+.logo{
+ 	background-image: url('http://hjortegården.dk/wp-content/uploads/2016/02/yousee-nyt-logo.png');
+ 	background-size: 100%;
+ 	height: 50px;
+ 	width: 100%;
+ }
+
+
+.personinfostyle{
+	margin-left: 5%;
+}
+.blanket{
+	display :flex;
+	flex-wrap: wrap;
+	width: 90%;
+	justify-content: center;
+	
+}
+
+.blanketchild{
+	margin: 5px;
 
 }
+.pakevalg{
+
+	height: 300px;
+}
+
+.betingelser{
+	display:flex;
+	flex-direction: column;
+
+
+}
+.bestil{
+	width: 120px;
+	height: 50px;
+	margin: 15px;
+	color:black;
+	font-size: 1em;
+	background: #3cb84d;
+	float: right;
+	display:inline-block;
+}
+.bestil:hover{
+	background-color: #4CAF50; /* Green */
+    color: white;
+
+}
+
+
