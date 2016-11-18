@@ -36,5 +36,5 @@ var ProjektValg = React.createClass( {
          </div>
       );
    }	
-});
+}); 
 export default ProjektValg;

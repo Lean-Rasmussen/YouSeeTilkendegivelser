@@ -5,22 +5,20 @@ background:#002219;
 
 }
 .container{
-	display: flex;
 	color:black;
-	font-family: etica;
-	flex-direction: column; 
+	font-family: etica; 
+	margin: 2%
 
 }
 
 .headercontainer{
 	display: flex;
 	flex-direction: column;
-	align-content: center;
+
 }
 
-.projectvalgContainer, .personinfostyle{
-	background :#fff;
-	color:#000;
+.personinfostyle{
+
 	margin-bottom: 15px;
 	flex-direction: column;
 }
@@ -28,6 +26,7 @@ background:#002219;
 .projectvalgContainer, .header{
 	align-items: center;
 	color:black;
+	margin:auto;
 }
 
 .header, .tilmeld, .footer, .Produktvalg{
@@ -37,11 +36,16 @@ background:#002219;
 .logo{
  	background-image: url('/components/img/topbanner.png');
  	height: 75px;
- 	width: 800px;
+ 	width: 475px;
  	background-repeat: no-repeat;
+ 	margin:auto;
  }
 
-.personinfostyle{
+.projectvalgContainer{
+	padding-left: 15px;
+	padding-top: 5px;
+	background :#fff;
+	color:#000;
 
 }
 .blanket{
@@ -56,7 +60,6 @@ background:#002219;
 	padding: 5px;
 
 }
-
 
 .betingelser{
 	display:flex;

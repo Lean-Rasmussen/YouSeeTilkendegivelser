@@ -6,7 +6,7 @@ export default class Header extends React.Component {
       	<div className='headercontainer'>
       	<div className = 'logo'> </div>
          <div className = 'header'>
-          <h1> Yousee Fællessalg tilmelding</h1>
+          <h1> Fællessalg tilmelding</h1>
           </div>
 
          </div>
