@@ -2,45 +2,47 @@
 body{
 background:#002219;
 
+
 }
 .container{
 	display: flex;
 	color:black;
 	font-family: etica;
+	flex-direction: column; 
+
+}
+
+.headercontainer{
+	display: flex;
 	flex-direction: column;
-	
+	align-content: center;
 }
 
 .projectvalgContainer, .personinfostyle{
 	background :#fff;
 	color:#000;
 	margin-bottom: 15px;
+	flex-direction: column;
 }
 
 .projectvalgContainer, .header{
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-color:black;
+	align-items: center;
+	color:black;
 }
 
 .header, .tilmeld, .footer, .Produktvalg{
-background:#002219;
-margin-left: 0%;
-margin-right: 0%;
-color:white;
+	background:#002219;
+	color:white;
 }
 .logo{
- 	background-image: url('http://hjortegården.dk/wp-content/uploads/2016/02/yousee-nyt-logo.png');
- 	background-size: 100%;
- 	height: 50px;
- 	width: 100%;
+ 	background-image: url('/components/img/topbanner.png');
+ 	height: 75px;
+ 	width: 800px;
+ 	background-repeat: no-repeat;
  }
 
-
 .personinfostyle{
-	margin-left: 5%;
+
 }
 .blanket{
 	display :flex;
@@ -51,19 +53,14 @@ color:white;
 }
 
 .blanketchild{
-	margin: 5px;
+	padding: 5px;
 
 }
-.pakevalg{
 
-	height: 300px;
-}
 
 .betingelser{
 	display:flex;
 	flex-direction: column;
-
-
 }
 .bestil{
 	width: 120px;
@@ -80,5 +77,23 @@ color:white;
     color: white;
 
 }
+#valgtPakke{
+	height: 400px;
+	margin-top: 15px;
+	background-repeat: no-repeat;
+}
+.fiber{
+	background-image: url('/components/img/HTF.png');
+}
 
+.fiberextra{
+	background-image: url('/components/img/HTFextra.png');
+}
+
+.fiberviasat{
+	background-image: url('/components/img/HTFviasat.png')
+}
+.fibertotal{
+	background-image: url('/components/img/HTFtotal.png')
+}
 

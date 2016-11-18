@@ -1,26 +1,30 @@
 import React from 'react';
+let imgIndex = 3;
+var ProjektValg = React.createClass( {
 
-
- class ProjektValg extends React.Component {
-	
-	constructor(props){
-		super(props);
-	}  
-	Image(){console.log('TV bundle fyring')}
+	getInitialState() {
+	    return {
+		      TvImg: this.props.TVPakker[imgIndex].pic,
+		      };
+	  },	
+	getImage(e){
+		imgIndex = document.getElementById("pakkevalg").selectedIndex
+		this.setState({
+        TvImg : this.props.TVPakker[imgIndex].pic,
+      });
+	},
 
 	render() {	
       return (
          <div className= 'Produktvalg'>
 	          <h2> Valg af produkter</h2>
 			<label>Vælg TV pakke</label>
-			<select  onChange = {this.Image.bind(this)} required="">
+			<select id = "pakkevalg" onChange = {this.getImage.bind(this)}>
 			{this.props.TVPakker.map(function(pakke, id,){
 				return <option  key = {pakke.Id} selected>{pakke.name}</option>
 			})}
 			</select>
-			<label> Billede af tv pakke</label>
-			<div className = 'pakevalg'>
-				<img src = {2}/>
+			<div className = {this.state.TvImg} id ='valgtPakke'>
 			</div>
 			<div className ='betingelser'>
 			<a href= ''>Betingelser for indvendig installation</a> 
@@ -32,5 +36,5 @@ import React from 'react';
          </div>
       );
    }	
-}
+});
 export default ProjektValg;

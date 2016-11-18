@@ -8,8 +8,6 @@ var Projektvalg = React.createClass( {
       roadNames: this.props.Projekt[indexOfSelectedProject].Vejnavne,
       }
   },
-
-
     updateVejnavne(e) {
       indexOfSelectedProject = document.getElementById("projectValgt").selectedIndex
       this.setState({

@@ -10,10 +10,10 @@ import Tilmeld from "./components/Tilmeld"
 class App extends React.Component {
    render() {
    	// Data
-   	const TVPakker =[{name:'HomeTrio Fiber', Id: 1, pic :"billede11"},
-   						 {name :'HomeTrio Fiber extra', Id: 2, pic: "billede22"}, 
-   						 {name :'HomeTrio Fiber Viasat', Id: 3, pic: "billede33"}, 
-   						 {name :'HomeTrio Fiber Total', Id: 4, pic : "billede44"}];
+   	const TVPakker =[{name:'HomeTrio Fiber', Id: 1, pic :"fiber"},
+   						 {name :'HomeTrio Fiber extra', Id: 2, pic: "fiberextra"}, 
+   						 {name :'HomeTrio Fiber Viasat', Id: 3, pic: "fiberviasat"}, 
+   						 {name :'HomeTrio Fiber Total', Id: 4, pic : "fibertotal"}];
 
 	 const fiberProjekter = [
 	{
