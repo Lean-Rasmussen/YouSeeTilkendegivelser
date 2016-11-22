@@ -7,7 +7,7 @@ import Tilmeld from "./components/Tilmeld"
 
 
 
-class App extends React.Component {
+var App = React.createClass({
    render() {
    	// Data
    	const TVPakker =[{name:'HomeTrio Fiber', Id: 1, pic :"fiber"},
@@ -36,14 +36,18 @@ class App extends React.Component {
 
          <div>
            	<Header/>
-            <Projektvalg Projekt ={fiberProjekter}/>
-            <ProduktValg TVPakker = {TVPakker}/>
-            <Tilmeld/>
+            <form>
+               <Projektvalg Projekt ={fiberProjekter} />
+               <ProduktValg TVPakker = {TVPakker} />
+               <Tilmeld/>
+               <button className= 'bestil'> Tilmeld bestilling</button>
+            </form>
             <Footer/>
          </div>
+
       );
    }
-}
+})
 
 
 

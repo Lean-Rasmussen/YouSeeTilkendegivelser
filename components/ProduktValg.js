@@ -17,7 +17,7 @@ var ProjektValg = React.createClass( {
 	render() {	
       return (
          <div className= 'Produktvalg'>
-	          <h2> Valg af produkter</h2>
+	         <h2> Valg af produkter</h2>
 			<label>Vælg TV pakke</label>
 			<select id = "pakkevalg" onChange = {this.getImage.bind(this)}>
 			{this.props.TVPakker.map(function(pakke, id,){
@@ -27,12 +27,11 @@ var ProjektValg = React.createClass( {
 			<div className = {this.state.TvImg} id ='valgtPakke'>
 			</div>
 			<div className ='betingelser'>
-			<a href= ''>Betingelser for indvendig installation</a> 
-			<a href= ''>installations information</a>
-			<a href= ''>område og priser for</a>    
-			<a href= ''>betingelser for fællessalg</a>
+			<a href= ''>Installations information</a>
+			<a href= ''>Område og priser ved tilmeldinger</a>    
+			<a href= ''>Betingelser for fællessalg</a>
+
 			</div>
-			<button className= 'bestil'> Tilmeld bestilling</button>
          </div>
       );
    }	

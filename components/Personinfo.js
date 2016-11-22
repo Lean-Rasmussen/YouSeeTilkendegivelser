@@ -16,23 +16,23 @@ export default class PersonInfo extends React.Component {
             </div>
             <div className= 'blanketchild'>
                 	<label>Husnummer</label>
-                  <input required= ""/></div>
+                  <input required/></div>
             
             <div className= 'blanketchild'>      
       			<label>Fornavn</label>
-      			<input type="text" required=""/></div>
+      			<input type="text" required pattern=".{2,15}" /></div>
             
             <div className= 'blanketchild'>
       			<label>Efternavn</label>
-      			<input type="text" required=""/></div>
+      			<input type="text" required pattern=".{2,15}"/></div>
             
             <div className= 'blanketchild'>
       			<label>Telefon nummer</label>
-      			<input type="tel"required=""/></div>
+      			<input type="tel" required pattern=".{8,8}"/></div>
       			
             <div className= 'blanketchild'>
             <label>Email</label>
-      			<input type="email"/></div>
+      			<input type="email" required/></div>
        </div>
          </div>
       );
