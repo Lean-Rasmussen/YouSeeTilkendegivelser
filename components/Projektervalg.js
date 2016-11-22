@@ -6,6 +6,7 @@ var Projektvalg = React.createClass( {
     getInitialState() {
     return {
       roadNames: this.props.Projekt[indexOfSelectedProject].Vejnavne,
+      tilmeldte : this.props.Projekt[indexOfSelectedProject].tilmeldte.length,
       }
   },
     updateVejnavne(e) {
@@ -27,7 +28,7 @@ var Projektvalg = React.createClass( {
             })}
       			</select>
             </div>
-            <p>Tilmeldte antal af tilmeldte fra database</p> 
+            <p>Tilmeldte antal {this.state.tilmeldte}</p> 
   			    <PersonInfo Vejnavne = {this.state.roadNames}/>
 		    </div>
     );

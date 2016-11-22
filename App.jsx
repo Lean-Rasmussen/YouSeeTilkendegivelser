@@ -6,6 +6,38 @@ import Projektvalg from "./components/Projektervalg"
 import Tilmeld from "./components/Tilmeld"
 
 
+let tilmelding =
+   {
+      vej:"",
+      nummer:'',
+      navn: '',
+      telefon:'',
+      email:'',
+      Tvpakke:"",
+
+   }
+
+const resetFrom = function(){
+   tilmelding =
+   {
+      vej:"",
+      nummer:'',
+      navn: '',
+      telefon:'',
+      email:'',
+      Tvpakke:"",
+
+   }
+   console.log(tilmelding)
+}
+
+
+
+const sendTilmeld = function(){
+   resetFrom();
+   customerinfo()
+   console.log(tilmelding)
+};
 
 var App = React.createClass({
    render() {
@@ -15,22 +47,23 @@ var App = React.createClass({
    						 {name :'HomeTrio Fiber Viasat', Id: 3, pic: "fiberviasat"}, 
    						 {name :'HomeTrio Fiber Total', Id: 4, pic : "fibertotal"}];
 
-	 const fiberProjekter = [
+	 let fiberProjekter = [
 	{
 	ProjektNavn : 'Ryttergaarden',
 	Vejnavne : ['Maanevej','Orionvej', 'Saturnvej', 'Jupitervaenget'],
 	KontaktPerson : 'John Jensen',
-	YouSeeProjektLeder : "Thomas Thomsen"
+	YouSeeProjektLeder : "Thomas Thomsen",
+   tilmeldte : []
 	},
 	{
 	ProjektNavn : 'Steenstrup',				
 	Vejnavne : ['Holmevej','Toftevaenget', 'Sommervej','Vinterstien'],
 	KontaktPerson : 'Olga Johansen',
-	YouSeeProjektLeder : "Thomas Thomsen"
+	YouSeeProjektLeder : "Thomas Thomsen",
+   tilmeldte :[]
 	},
 
 	]
-
 
       return (
 
@@ -40,7 +73,7 @@ var App = React.createClass({
                <Projektvalg Projekt ={fiberProjekter} />
                <ProduktValg TVPakker = {TVPakker} />
                <Tilmeld/>
-               <button className= 'bestil'> Tilmeld bestilling</button>
+               <button className= 'bestil' onClick = {sendTilmeld} > Tilmeld bestilling</button>
             </form>
             <Footer/>
          </div>

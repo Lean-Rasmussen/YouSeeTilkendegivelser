@@ -30,7 +30,7 @@ var ProjektValg = React.createClass( {
 			<a href= ''>Installations information</a>
 			<a href= ''>Område og priser ved tilmeldinger</a>    
 			<a href= ''>Betingelser for fællessalg</a>
-
+			<label>Jeg acceptere betingelserne for tilmeldingen<input type ="checkbox" required/> </label>
 			</div>
          </div>
       );

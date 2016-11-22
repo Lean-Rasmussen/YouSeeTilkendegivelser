@@ -24,7 +24,7 @@ export default class PersonInfo extends React.Component {
             
             <div className= 'blanketchild'>
       			<label>Efternavn</label>
-      			<input type="text" required pattern=".{2,15}"/></div>
+      			<input type="text" required pattern=".{2,15}" id= 'efternavn'/></div>
             
             <div className= 'blanketchild'>
       			<label>Telefon nummer</label>
