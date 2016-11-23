@@ -64,6 +64,11 @@ var App = React.createClass({
 	},
 
 	]
+   const kanaler = ["dr1",'dr2','dr3','ramasjag', 'drk', 'drultra', 'tv2', 'tv2charlie', 'tv2fri','dk4', 'folketing', 'ndr', 'ard', 'zdf', 'rtl', 'sv1', 'sv2', 'sv4',
+    'no2', 'tnt', 'regtv','tv2reg', '6', '9', 'animalplanet', '4', '5', 'euro1', 'euro2', 'tcm', 'cnn', 'disneychannel', 'disneyjunior', 'disneyxd', 'nick', 'CN','discov',
+     'id', 'vh1', 'mtv', 'nationalgeo', 'boomerang', 'natgeowild', 'natgeoppl', 'ComedyCe', 'Tcl', "tv2news", "bbcwn",'bbcbrit', 'tv2zule',
+    'tv3', 'tv3puls', 'tv3sp1', 'tv3sp2', 'tv3plus', 'viasatnat','viasathis', 'viasatgolf', 'viasatcomedy', 'viasatfam', 'viasatserie', 'viasatfilmhits', 'viasataction', 
+    'viasatprim', 'playboy', 'tv2sport' ]
 
       return (
 
@@ -71,7 +76,7 @@ var App = React.createClass({
            	<Header/>
             <form>
                <Projektvalg Projekt ={fiberProjekter} />
-               <ProduktValg TVPakker = {TVPakker} />
+               <ProduktValg TVPakker = {TVPakker} kanaler = {kanaler} />
                <Tilmeld/>
                <button className= 'bestil' onClick = {sendTilmeld} > Tilmeld bestilling</button>
             </form>

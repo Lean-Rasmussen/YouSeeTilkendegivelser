@@ -99,3 +99,23 @@ background:#002219;
 	background-image: url('/components/img/HTFtotal.png')
 }
 
+
+.tvkanaler{
+	display:flex;
+	background: #004225;
+	flex-wrap:wrap;
+	align-content: space-around;
+	list-style-type: none;
+	margin: auto;
+	padding:15px;
+}
+.kanal{
+	display:flex; 
+  	width: 9.8%;
+  	background-color:white;
+  	color:black;
+  	margin: 1px;
+}
+.iconboks{
+	height:50px;
+}

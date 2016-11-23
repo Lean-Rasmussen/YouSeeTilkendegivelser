@@ -26,6 +26,11 @@ var ProjektValg = React.createClass( {
 			</select>
 			<div className = {this.state.TvImg} id ='valgtPakke'>
 			</div>
+			<ul className = 'tvkanaler'>
+			{this.props.kanaler.map(function(kanal) {
+				return <li className= 'kanal' key= {kanal} > <div className ='iconboks'> {kanal}</div> </li>
+			})}
+			</ul>
 			<div className ='betingelser'>
 			<a href= ''>Installations information</a>
 			<a href= ''>Område og priser ved tilmeldinger</a>    
