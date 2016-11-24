@@ -8,19 +8,19 @@ export default class PersonInfo extends React.Component {
            <div className = 'blanket'>
            <div className= 'blanketchild'>
         			<label>Vejnaven:</label>
-        			<select>
+        			<select id='vej'>
                       {this.props.Vejnavne.map(function(vejnavn){
-                   		   return <option >{vejnavn}</option>
+                   		   return <option key={vejnavn} >{vejnavn}</option>
                    		 })}          	
       			</select>		
             </div>
             <div className= 'blanketchild'>
                 	<label>Husnummer</label>
-                  <input required/></div>
+                  <input id="nummer" required/></div>
             
             <div className= 'blanketchild'>      
       			<label>Fornavn</label>
-      			<input type="text" required pattern=".{2,15}" /></div>
+      			<input type="text" required pattern=".{2,15}" id='fornavn' /></div>
             
             <div className= 'blanketchild'>
       			<label>Efternavn</label>
@@ -28,11 +28,11 @@ export default class PersonInfo extends React.Component {
             
             <div className= 'blanketchild'>
       			<label>Telefon nummer</label>
-      			<input type="tel" required pattern=".{8,8}"/></div>
+      			<input type="tel" required pattern=".{8,8}" id='telefon'/></div>
       			
             <div className= 'blanketchild'>
             <label>Email</label>
-      			<input type="email" required/></div>
+      			<input type="email" required id='email'/></div>
        </div>
          </div>
       );

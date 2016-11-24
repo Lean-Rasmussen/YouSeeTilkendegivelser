@@ -24,7 +24,7 @@ var Projektvalg = React.createClass( {
       		<div className ='projektStyle' >
           <select id = 'projectValgt' onChange = {this.updateVejnavne} required="">
           {this.props.Projekt.map(function(projekt, key){
-              return <option>{projekt.ProjektNavn}</option> 
+              return <option key = {projekt.ProjektNavn}>{projekt.ProjektNavn}</option> 
             })}
       			</select>
             </div>
