@@ -62,16 +62,20 @@ let tilmelding =
    }
 }
 
+
 const sendTilmeld = function(e){
    getCustomerInfro()
       if(tilmelding.navn ==='' || tilmelding.email ==='' || tilmelding.nummer ==='' || tilmelding.telefon ==='' ){
          alert('Udfyld venligst dine informationer')
 
-   }else{
-   alert('Tak for din tilmelding og bestilling')
-
+   }else if(document.getElementById('betingelserCheckBox').checked === false){
+      alert('Check venligst betingelserne for tilmelding')
+   } else{
+      let chosenProject = document.getElementById("projectValgt").selectedIndex;
+      fiberProjekter[chosenProject].tilmeldte.push(tilmelding);
+      alert('Tak for din tilmelding og bestilling')
+      
    }
-   console.log(tilmelding)
    resetform()
 };
 
