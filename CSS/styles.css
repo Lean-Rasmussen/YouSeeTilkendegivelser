@@ -1,33 +1,25 @@
 
 body{
 background:#002219;
-
-
 }
 .container{
 	color:black;
 	font-family: etica; 
 	margin: 2%
-
 }
-
 .headercontainer{
 	display: flex;
 	flex-direction: column;
-
 }
-
 .personinfostyle{
 	margin-bottom: 15px;
 	flex-direction: column;
 }
-
 .projectvalgContainer, .header{
 	align-items: center;
 	color:black;
 	margin:auto;
 }
-
 .header, .tilmeld, .footer, .Produktvalg{
 	background:#002219;
 	color:white;
@@ -39,27 +31,37 @@ background:#002219;
  	background-repeat: no-repeat;
  	margin:auto;
  }
-
 .projectvalgContainer{
 	padding-left: 15px;
 	padding-top: 5px;
 	background :#fff;
 	color:#000;
-
+}
+#projektKort{
+	width: 40%;
+	height: 200px;
+	background-position: center;
+	background-size:100% 100%;
+	float: right;
+	margin:10px;
+	border-color: yellow;
+	border:3px;
+}
+.KortSteenstrup{
+	background-image: url('/components/img/Oerby.png');
+}
+.KortRyttergaarden{
+	background-image: url('/components/img/Ryttergarden.png');
 }
 .blanket{
 	display :flex;
 	flex-wrap: wrap;
 	width: 90%;
 	justify-content: center;
-	
 }
-
 .blanketchild{
 	padding: 5px;
-
 }
-
 .betingelser{
 	display:flex;
 	flex-direction: column;
@@ -77,29 +79,25 @@ background:#002219;
 .bestil:hover{
 	background-color: #4CAF50; /* Green */
     color: white;
-
 }
 #valgtPakke{
 	height: 400px;
 	margin-top: 15px;
 	background-repeat: no-repeat;
+	background-size:100% 100%;
 }
 .fiber{
 	background-image: url('/components/img/HTF.png');
 }
-
 .fiberextra{
 	background-image: url('/components/img/HTFextra.png');
 }
-
 .fiberviasat{
 	background-image: url('/components/img/HTFviasat.png')
 }
 .fibertotal{
 	background-image: url('/components/img/HTFtotal.png')
 }
-
-
 .tvkanaler{
 	display:flex;
 	background: #004225;

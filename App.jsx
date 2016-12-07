@@ -13,16 +13,17 @@ let fiberProjekter = [
    Vejnavne : ['Maanevej','Orionvej', 'Saturnvej', 'Jupitervaenget'],
    KontaktPerson : 'John Jensen',
    YouSeeProjektLeder : "Thomas Thomsen",
-   tilmeldte : []
+   tilmeldte : [],
+   kort: 'KortRyttergaarden' ,
    },
    {
    ProjektNavn : 'Steenstrup',            
    Vejnavne : ['Holmevej','Toftevaenget', 'Sommervej','Vinterstien'],
    KontaktPerson : 'Olga Johansen',
    YouSeeProjektLeder : "Thomas Thomsen",
-   tilmeldte :[]
+   tilmeldte :[],
+   kort: 'KortSteenstrup',
    },
-
    ]
 
 let tilmelding =
@@ -82,10 +83,43 @@ const sendTilmeld = function(e){
 var App = React.createClass({
    render() {
    	// Data
-   	const TVPakker =[{name:'HomeTrio Fiber', Id: 1, pic :"fiber"},
-   						 {name :'HomeTrio Fiber extra', Id: 2, pic: "fiberextra"}, 
-   						 {name :'HomeTrio Fiber Viasat', Id: 3, pic: "fiberviasat"}, 
-   						 {name :'HomeTrio Fiber Total', Id: 4, pic : "fibertotal"}];
+   	const TVPakker =[
+    {name:'HomeTrio Fiber', Id: 1, pic :"fiber", pris: 564},
+   	{name :'HomeTrio Fiber extra', Id: 2, pic: "fiberextra", pris : 614}, 
+   	{name :'HomeTrio Fiber Viasat', Id: 3, pic: "fiberviasat", pris: 664}, 
+   	{name :'HomeTrio Fiber Total', Id: 4, pic : "fibertotal", pris: 764}
+    ];
+
+    const Multiroom =[ 
+    {name:'4', pris: 476},
+    {name:'3', pris: 357},
+    {name:'2', pris: 238},
+    {name:'1', pris: 119},
+    {name:'0', pris: 0},
+    ];
+
+    const BBhastighed =[    
+      {name: "500/50", Id: 'BB4', pris: 150},
+      {name: "300/30", Id: 'BB3', pris: 100},
+      {name: "100/20", Id: 'BB2', pris: 50},
+      {name: "50/10", Id: 'BB1',  pris: 0},
+    ];
+
+    const MobilAbo =[
+    {name: 'Fritale 25gb', Id: 'M4', pris: 299},
+    {name: 'Fritale 10gb', Id: 'M3', pris: 199},
+    {name: 'Fritale 5gb', Id: 'M2', pris: 149},
+    {name: '', Id: 'M1', pris: 0},
+    ];
+
+    const ExtraNumre =[
+    {name:'4', pris: 100},
+    {name:'3', pris: 100},
+    {name:'2', pris: 100},
+    {name:'1', pris: 100},
+    {name:'0', pris: 0},
+    ];
+
 
 
 
@@ -116,7 +150,7 @@ var App = React.createClass({
            	<Header/>
             <form>
                <Projektvalg Projekt ={fiberProjekter} />
-               <ProduktValg TVPakker = {TVPakker} />
+               <ProduktValg TVPakker = {TVPakker} Multiroom={Multiroom} BBhastighed = {BBhastighed} MobilAbo={MobilAbo} ExtraNumre={ExtraNumre}  />
                <Tilmeld/>
                <button className= 'bestil' onClick = {sendTilmeld} > Tilmeld bestilling</button>
             </form>
