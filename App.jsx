@@ -90,7 +90,7 @@ var App = React.createClass({
    	{name :'HomeTrio Fiber Total', Id: 4, pic : "fibertotal", pris: 764}
     ];
 
-    const Multiroom =[ 
+    const ExtraNumre =[ 
     {name:'4', pris: 476},
     {name:'3', pris: 357},
     {name:'2', pris: 238},
@@ -112,7 +112,7 @@ var App = React.createClass({
     {name: '', Id: 'M1', pris: 0},
     ];
 
-    const ExtraNumre =[
+    const Multiroom  =[
     {name:'4', pris: 100},
     {name:'3', pris: 100},
     {name:'2', pris: 100},

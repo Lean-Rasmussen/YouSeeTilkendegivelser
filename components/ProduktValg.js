@@ -1,14 +1,15 @@
 import React from 'react';
 let imgIndex = 3;
 let valgtBB = 3;
-let multiroomp =0;
+let multiroom =0;
 let valgtMobilAbo = 0;
 let antalExtranumre = 0;
 var ProjektValg = React.createClass({
 
 	getInitialState() {
-	    return {
-		      TvImg: this.props.TVPakker[imgIndex].pic,
+
+	    return {	
+				TvImg : this.props.TVPakker[imgIndex].pic,
 		      };
 	  },	
 	getImage(e){
@@ -18,7 +19,6 @@ var ProjektValg = React.createClass({
 		valgtMobilAbo = document.getElementById("MobilAbo").selectedIndex
 		antalExtranumre = document.getElementById("ExtraNumre").selectedIndex
 
-		 
 		this.setState({
         TvImg : this.props.TVPakker[imgIndex].pic,
         Tvpris : this.props.TVPakker[imgIndex].pris,
@@ -28,7 +28,6 @@ var ProjektValg = React.createClass({
         ExtraNumrePris: this.props.ExtraNumre[antalExtranumre].pris,
       });
 	},
-
 	render() {	
       return (
          <div className= 'Produktvalg'>
@@ -43,7 +42,7 @@ var ProjektValg = React.createClass({
 			<label>Multiroom antal extra TV</label>
 			<select id = "multiroom" onChange = {this.getImage}>
 				{this.props.Multiroom.map(function(antal, id){
-						return <option  key = {antal} selected>{antal.name}</option>
+						return <option  key = {id} selected>{antal.name}</option>
 				})}
 			</select>
 			
@@ -64,7 +63,7 @@ var ProjektValg = React.createClass({
 			<label>Antal extranumre</label>
 			<select id = "ExtraNumre" onChange = {this.getImage}>
 				{this.props.ExtraNumre.map(function(antal, id){
-						return <option  key = {antal} selected>{antal.name}</option>
+						return <option  key = {id} selected>{antal.name}</option>
 				})}
 			</select>
 

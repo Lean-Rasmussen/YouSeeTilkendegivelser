@@ -17,11 +17,12 @@ var Projektvalg = React.createClass( {
         map: this.props.Projekt[indexOfSelectedProject].kort,
       });
 
+
   },
    render() {
       return (
          <div className= 'projectvalgContainer'>
-          <div id ='projektKort' className={this.state.map} ></div>
+          <div id ='projektKort' onclick ={2+4} className={this.state.map} ></div>
          	<h3> Vælg hvilket projekt du gerne vil tilmelde dig til </h3>
 
           <label>Aktive projekter</label>
