@@ -1,8 +1,8 @@
 import React from 'react';
 
-import Footer from "./components/Footer" 
+import Footer from " ./components/Footer"
 import Header from "./components/Header" 
-import ProgressionMap from "./pages/ProgressionMap/ProgressionMap"
+//import ProgressionMap from "./pages/ProgressionMap/ProgressionMap"
 import SignUp from "./pages/SignUp/signUp"
 import Vejledning from "./pages/Vejledning/Vejledning"
 
@@ -17,7 +17,6 @@ var App = React.createClass({
          <div>
          <Header/>
          <SignUp/>
-         <Footer/>
          </div>
 
       );

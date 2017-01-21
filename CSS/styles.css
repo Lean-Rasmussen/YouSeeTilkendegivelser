@@ -48,10 +48,10 @@ background:#002219;
 	border:3px;
 }
 .KortSteenstrup{
-	background-image: url('/components/img/Oerby.png');
+	background-image: url('../pages/SignUp/img/Oerby.png');
 }
 .KortRyttergaarden{
-	background-image: url('/components/img/Ryttergarden.png');
+	background-image: url('../pages/SignUp/img/Ryttergarden.png');
 }
 .blanket{
 	display :flex;
